@@ -1,0 +1,19 @@
+@use "header";
+@use "main";
+@use "footer";
+@use "components";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5fa;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
