@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
 export default function LandingPage() {
+  localStorage.setItem("visited", "true");
   return (
     <div className="wrapper landing">
       <figure className="landing__figure">

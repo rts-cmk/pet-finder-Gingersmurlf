@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@
     }
   }
   .landing__button {
-    background: #57419d;
+    background: $vegetta-color;
     border: none;
     border-radius: 30px;
     width: 350px;
