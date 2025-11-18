@@ -7,6 +7,7 @@ import LandingPage from "./components/LandingPage";
 import App from "./App";
 import NotFound from "./components/NotFound";
 import SpashScreen from "./components/SplashScreen";
+import DogDescription from "./components/DogDescription";
 
 import "./scss/style.scss";
 
@@ -29,6 +30,17 @@ const router = createBrowserRouter([
       ]);
 
       return { dogs, user };
+    },
+  },
+  {
+    path: "/DogDescription/:id",
+    element: <DogDescription />,
+    loader: async ({ params }) => {
+      const { id } = params;
+      const dog = await fetch(`http://localhost:4000/dogs/${id}`).then(
+        (res) => res.json()
+      );
+      return { dog };
     },
   },
   {

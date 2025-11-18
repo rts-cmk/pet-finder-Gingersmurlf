@@ -19,7 +19,7 @@ export default function LandingPage() {
         </figcaption>
       </figure>
       <Link to="/Home">
-        <button className="landing__button">Skip</button>
+        <button className="button">Skip</button>
       </Link>
     </div>
   );

@@ -2,6 +2,7 @@
 @use "main";
 @use "footer";
 @use "components";
+@use "description";
 @use "variables" as *;
 
 * {
@@ -12,14 +13,33 @@
 
 body {
   background-color: $page-color;
+  font-family: $page-font;
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
-  font-family: $page-font;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  background: $vegetta-color;
+  border: none;
+  border-radius: 30px;
+  width: 350px;
+  height: 50px;
+  margin-top: 75px;
+  color: white;
+  font-weight: bold;
 }
