@@ -8,6 +8,7 @@ import App from "./App";
 import NotFound from "./components/NotFound";
 import SpashScreen from "./components/SplashScreen";
 import DogDescription from "./components/DogDescription";
+import Profile from "./components/Profile";
 
 import "./scss/style.scss";
 
@@ -44,9 +45,21 @@ const router = createBrowserRouter([
     },
   },
   {
+    path: "/Profile",
+    element: <Profile />,
+    loader: async ({ params }) => {
+      const { id } = params;
+      const user = await fetch(`http://localhost:4000/user/${id}`).then(
+        (res) => res.json()
+      );
+      return { user };
+    },
+  },
+  {
     path: "*",
     element: <NotFound />,
   },
+  
 ]);
 
 const root = document.getElementById("root");
