@@ -66,7 +66,7 @@ export default function App() {
                         </div>
                       </div>
                       <div className="flex second">
-                        <img src="./assets/location.svg" alt="" />
+                        <img src="./assets/location2.svg" alt="" />
                         <p className="home__location">{dogs.location}</p>
                       </div>
                       <p className="home__des">

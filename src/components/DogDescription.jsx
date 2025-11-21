@@ -37,7 +37,9 @@ export default function DogDescription() {
           </li>
         </ul>
         <p className="description__text">{dog.long_description}</p>
-        <Link to="/"><button className="button">Back</button></Link>
+        <Link to="/">
+          <button className="button">Back</button>
+        </Link>
       </main>
     </div>
   );
