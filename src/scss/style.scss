@@ -1,0 +1,45 @@
+@use "header";
+@use "main";
+@use "footer";
+@use "components";
+@use "description";
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $page-color;
+  font-family: $page-font;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  background: $vegetta-color;
+  border: none;
+  border-radius: 30px;
+  width: 350px;
+  height: 50px;
+  margin-top: 75px;
+  color: white;
+  font-weight: bold;
+}

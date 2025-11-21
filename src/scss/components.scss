@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  .landing__figure {
+    display: flex;
+    min-width: 400px;
+    margin: 10px auto 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .landing__figcaption {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .landing__title {
+    color: $font-color1;
+    font-size: 20px;
+  }
+  .landing__text {
+    color: $font-color3;
+    font-size: 16px;
+    text-align: center;
+  }
+  .landing__button {
+    margin-top: 250px;
+  }
+}
